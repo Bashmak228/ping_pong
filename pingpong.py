@@ -23,7 +23,7 @@ class GameSprite(sprite.Sprite):
         window.blit(self.image, (self.rect.x, self.rect.y))
 
 ball = sprite.Sprite()
-ball.image = image.load("ball34.png")
+ball.image = image.load("ball.png")
 ball.rect = ball.image.get_rect(center = (300,300)) 
 
 player = sprite.Sprite()
@@ -51,13 +51,13 @@ class Player(GameSprite):
         if keys[K_s] and self.rect.y < win_height - 80:
             self.rect.y += self.speed
 
-fon = image.load("892658.jpg ")  
+fon = image.load("6206870741.jpg ")  
 
 win_width = 600
 win_height = 500
 display.set_caption("p1.png")
 window = display.set_mode((win_width, win_height))
-background = transform.scale(image.load("892658.jpg"), (win_width, win_height))
+background = transform.scale(image.load("6206870741.jpg"), (win_width, win_height))
 
 game = True
 finish = False
